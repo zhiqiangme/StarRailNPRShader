@@ -78,7 +78,7 @@ Shader "Honkai Star Rail/Character/FaceMask"
             Cull Off
             ZWrite On
 
-            ColorMask RGBA 0
+            ColorMask RGBA
 
             HLSLPROGRAM
 

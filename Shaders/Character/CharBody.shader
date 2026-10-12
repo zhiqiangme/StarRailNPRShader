@@ -252,9 +252,9 @@ Shader "Honkai Star Rail/Character/Body"
             Cull [_Cull]
             ZWrite On
 
-            Blend 0 [_SrcBlendColor] [_DstBlendColor], [_SrcBlendAlpha] [_DstBlendAlpha]
+            Blend [_SrcBlendColor] [_DstBlendColor], [_SrcBlendAlpha] [_DstBlendAlpha]
 
-            ColorMask RGBA 0
+            ColorMask RGBA
 
             HLSLPROGRAM
 
@@ -304,9 +304,9 @@ Shader "Honkai Star Rail/Character/Body"
             ZTest LEqual
             ZWrite On
 
-            Blend 0 [_SrcBlendColor] [_DstBlendColor], [_SrcBlendAlpha] [_DstBlendAlpha]
+            Blend [_SrcBlendColor] [_DstBlendColor], [_SrcBlendAlpha] [_DstBlendAlpha]
 
-            ColorMask RGBA 0
+            ColorMask RGBA
 
             HLSLPROGRAM
 

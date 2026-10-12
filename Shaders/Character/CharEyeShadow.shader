@@ -75,8 +75,7 @@ Shader "Honkai Star Rail/Character/EyeShadow"
 
             Blend DstColor Zero, [_SrcBlendAlpha] [_DstBlendAlpha]
 
-            ColorMask RGBA 0
-            ColorMask 0 1
+            ColorMask RGBA
 
             HLSLPROGRAM
 

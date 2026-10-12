@@ -120,9 +120,9 @@ Shader "Honkai Star Rail/Character/Face"
             Cull Back
             ZWrite On
 
-            Blend 0 One Zero, [_SrcBlendAlpha] [_DstBlendAlpha]
+            Blend One Zero, [_SrcBlendAlpha] [_DstBlendAlpha]
 
-            ColorMask RGBA 0
+            ColorMask RGBA
 
             HLSLPROGRAM
 
@@ -172,7 +172,7 @@ Shader "Honkai Star Rail/Character/Face"
             ZWrite Off
             ZTest LEqual // 眼白是在脸后面的，并且比眼睛要大，需要 ZTest 来剔除，然后再写 Stencil，这样才能准确抠出眼睛
 
-            ColorMask 0 0
+            ColorMask 0
 
             HLSLPROGRAM
 
@@ -210,9 +210,9 @@ Shader "Honkai Star Rail/Character/Face"
             ZTest LEqual
             ZWrite On
 
-            Blend 0 One Zero, [_SrcBlendAlpha] [_DstBlendAlpha]
+            Blend One Zero, [_SrcBlendAlpha] [_DstBlendAlpha]
 
-            ColorMask RGBA 0
+            ColorMask RGBA
 
             HLSLPROGRAM
 

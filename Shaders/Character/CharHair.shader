@@ -130,9 +130,9 @@ Shader "Honkai Star Rail/Character/Hair"
             Cull [_Cull]
             ZWrite On
 
-            Blend 0 One Zero, [_SrcBlendAlpha] [_DstBlendAlpha]
+            Blend One Zero, [_SrcBlendAlpha] [_DstBlendAlpha]
 
-            ColorMask RGBA 0
+            ColorMask RGBA
 
             HLSLPROGRAM
 
@@ -180,9 +180,9 @@ Shader "Honkai Star Rail/Character/Hair"
             Cull [_Cull]
             ZWrite On
 
-            Blend 0 One Zero, [_SrcBlendAlpha] [_DstBlendAlpha]
+            Blend One Zero, [_SrcBlendAlpha] [_DstBlendAlpha]
 
-            ColorMask RGBA 0
+            ColorMask RGBA
 
             HLSLPROGRAM
 
@@ -234,9 +234,9 @@ Shader "Honkai Star Rail/Character/Hair"
             Cull Back // [_Cull]
             ZWrite On
 
-            Blend 0 SrcAlpha OneMinusSrcAlpha, [_SrcBlendAlpha] [_DstBlendAlpha]
+            Blend SrcAlpha OneMinusSrcAlpha, [_SrcBlendAlpha] [_DstBlendAlpha]
 
-            ColorMask RGBA 0
+            ColorMask RGBA
 
             HLSLPROGRAM
 
@@ -284,7 +284,7 @@ Shader "Honkai Star Rail/Character/Hair"
             ZTest LEqual
             ZWrite On
 
-            ColorMask RGB 0
+            ColorMask RGB
 
             HLSLPROGRAM
 
